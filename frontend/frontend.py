@@ -15,7 +15,7 @@ if st.button("Analyze Sentiment"):
     else:
         try:
             response = requests.post(
-                "http://127.0.0.1:8000/predict",
+                "https://sentiment-api-wmj1.onrender.com/predict",
                 json={"text": text}
             )
 
